@@ -1,0 +1,71 @@
+import * as study from "../Json/study.json";
+import * as practice from "../Json/practice.json";
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: study.default,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: practice.default,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+export const heroOne = {
+  reverse: true,
+  inverse: true,
+  topLine: {
+    text: "Học tập Tại Trường Đại Học Nha Trang",
+  },
+  headline: "Trình độ đại học cử nhân Cơ điện tử.",
+  description:
+    "Vừa làm vừa học trau dồi bản thân và cũng để giúp khác hàng những gì gọi là tốt nhất.",
+  buttonLabel: "Facebook",
+  buttonLabelEmail: "Email",
+  href: "https://www.facebook.com/profile.php?id=100009136510942",
+  hrefEm: "mailto:buihuynhquoctrung@gmail.com",
+  imgStart: "start",
+  img: defaultOptions,
+  start: "true",
+};
+
+export const heroTwo = {
+  reverse: false,
+  inverse: false,
+  topLine: {
+    text: "Designed & Developed",
+  },
+  headline: "The best practices",
+  description: "Our clients have had the best experience working with us",
+  buttonLabel: "Facebook",
+  buttonLabelEmail: "Email",
+  href: "https://www.facebook.com/profile.php?id=100009136510942",
+  hrefEm: "mailto:buihuynhquoctrung@gmail.com",
+
+  linkTo: "/more",
+  imgStart: "start",
+  img: defaultOptions1,
+  start: "true",
+};
+
+export const heroThree = {
+  reverse: true,
+  inverse: true,
+  topLine: {
+    text: "Highly reputed brand",
+  },
+  headline: "Why us? ",
+  description:
+    "Our 9 year experience have allowed us to use the most innovative technologies and methodologies",
+  buttonLabel: "View Project",
+
+  linkTo: "/download",
+  imgStart: "",
+  img: "./assets/svg/ChartUp.svg",
+  start: "true",
+};
