@@ -3,7 +3,6 @@ import { Hero } from "../Imports/Index";
 import FeaturesData from "../Components/FeaturesData";
 import { Content } from "../Components/Content";
 import { heroOne, heroTwo, heroThree } from "../Data/HeroData";
-import Carousel from "../Components/Carousel";
 const Home = () => {
   return (
     <>

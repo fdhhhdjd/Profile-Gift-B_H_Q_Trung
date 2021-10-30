@@ -7,8 +7,9 @@ import {
   FaLinkedin,
   FaVoicemail,
   FaPhone,
+  SiZalo,
 } from "react-icons/fa";
-import { SiZalo } from "react-icons/si";
+
 const iconStyle = (Icon) => <Icon />;
 
 export const footerSocialData = [

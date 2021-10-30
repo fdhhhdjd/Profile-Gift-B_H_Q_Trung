@@ -6,9 +6,8 @@ import {
   FaTwitter,
   FaLinkedin,
   FaVoicemail,
-  FaPhone,
 } from "react-icons/fa";
-import { SiZalo } from "react-icons/si";
+
 const iconStyle = (Icon) => <Icon />;
 
 export const footerSocialData = [
@@ -30,12 +29,12 @@ export const footerSocialData = [
   {
     name: "Zalo",
     href: "tel:0348561815",
-    icon: iconStyle(SiZalo),
+    icon: iconStyle(FaTwitter),
   },
   {
     name: "Phone",
     href: "tel:0348561815",
-    icon: iconStyle(FaPhone),
+    icon: iconStyle(FaLinkedin),
   },
 ];
 
