@@ -4,11 +4,20 @@ import FeaturesData from "../Components/FeaturesData";
 import { Content } from "../Components/Content";
 import { heroOne, heroTwo, heroThree } from "../Data/HeroData";
 import Carousel from "../Components/Carousel";
-
+import { motion } from "framer-motion";
+import { headerAnimation } from "../Styles/Animation";
 const Home = () => {
   return (
     <>
-      <Hero />
+      <motion.div
+        className="content"
+        variants={headerAnimation}
+        animate={controls}
+        transition={{ delay: 0.2, type: "tween" }}
+      >
+        <Hero />
+      </motion.div>
+
       <FeaturesData />
       <Content {...heroOne} />
       <Content {...heroTwo} />

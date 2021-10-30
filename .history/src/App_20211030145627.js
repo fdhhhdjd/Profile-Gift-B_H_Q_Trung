@@ -8,7 +8,6 @@ import {
   PricingPage,
   Footer,
   ScrollTops,
-  SignPage,
 } from "./Imports/Index";
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/signup" exact component={SignPage} />
           <Route path="/pricing" exact component={PricingPage} />
         </Switch>
         <Footer />

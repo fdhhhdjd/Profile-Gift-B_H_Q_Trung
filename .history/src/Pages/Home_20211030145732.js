@@ -4,11 +4,21 @@ import FeaturesData from "../Components/FeaturesData";
 import { Content } from "../Components/Content";
 import { heroOne, heroTwo, heroThree } from "../Data/HeroData";
 import Carousel from "../Components/Carousel";
-
+import { motion } from "framer-motion";
+import { headerAnimation, controls } from "../Styles/Animation";
 const Home = () => {
+  const [element, controls] = useScroll();
   return (
     <>
-      <Hero />
+      <motion.div
+        className="content"
+        variants={headerAnimation}
+        animate={controls}
+        transition={{ delay: 0.2, type: "tween" }}
+      >
+        <Hero />
+      </motion.div>
+
       <FeaturesData />
       <Content {...heroOne} />
       <Content {...heroTwo} />
@@ -18,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default memo(Home);
+export default Home;

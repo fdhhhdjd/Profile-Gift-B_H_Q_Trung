@@ -6,9 +6,11 @@ import { heroOne, heroTwo, heroThree } from "../Data/HeroData";
 import Carousel from "../Components/Carousel";
 
 const Home = () => {
+  const [element, controls] = useScroll();
   return (
     <>
       <Hero />
+
       <FeaturesData />
       <Content {...heroOne} />
       <Content {...heroTwo} />

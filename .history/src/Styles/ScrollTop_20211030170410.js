@@ -3,8 +3,8 @@ export const ScrollDiv = styled.div`
   background-color: rgb(18, 18, 88);
   border-radius: 100%;
   position: fixed;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 4rem;
+  width: 4rem;
   bottom: 40px;
   right: 40px;
   z-index: 2000;
